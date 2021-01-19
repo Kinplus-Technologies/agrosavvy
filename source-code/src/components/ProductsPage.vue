@@ -5,7 +5,10 @@
         AGROSAVVY PRODUCTS
       </h1>
       <span class="subtitle-1">
-        AgroSavvy is a leading supplier of agricultural products from Africa to customers around the world, especially in America, Asia and Europe. We have different grades of product and packaging and can accommodate most client’s needs.
+        AgroSavvy is a leading supplier of agricultural products from Africa to
+        customers around the world, especially in America, Asia and Europe. We
+        have different grades of product and packaging and can accommodate most
+        client’s needs.
       </span>
       <product-items></product-items>
     </div>
@@ -13,10 +16,10 @@
 </template>
 
 <script>
-import ProductItems from './ProductItems.vue'
+import ProductItems from "./ProductItems.vue";
 
 export default {
   name: "ProductsPage",
-  components: { ProductItems },
-}
+  components: { ProductItems }
+};
 </script>

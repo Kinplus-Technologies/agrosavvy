@@ -2,14 +2,14 @@
   <div class="bg-grey">
     <v-row justify="center">
       <v-col
-        cols="12" sm="6" md="2"
+        cols="12"
+        sm="6"
+        md="2"
         v-for="product in products"
         :key="product.id"
       >
-        <div
-          class="py-2 card-hover"
-        >
-          <router-link :to="product.link" class="product-link">
+        <div class="py-2 card-hover">
+          <router-link :to="product.link">
             <v-img
               contain
               max-height="200"
@@ -29,7 +29,7 @@
 
 <script>
 // import Vue from "vue";
-import { uuid } from '@/services'
+import { uuid } from "@/services";
 
 export default {
   name: "ProductItems",
@@ -62,7 +62,7 @@ export default {
         },
         {
           id: uuid(),
-          src: "uploads/shb8.jpg",
+          src: "uploads/shb1.jpg",
           alt: "Shea Butter",
           name: "Shea Butter",
           // title: "Go to Shea Butter page",
@@ -70,26 +70,23 @@ export default {
         },
         {
           id: uuid(),
-          src: "uploads/ssm5.jpg",
+          src: "uploads/ssm1.jpg",
           alt: "Sesame Seeds",
           name: "Sesame Seeds",
           // title: "Go to Sesame Seeds page",
           link: ""
         }
-      ],
-    }
+      ]
+    };
   }
-}
+};
 </script>
 
 <style>
-  .bg-grey {
-    background-color: #bebaba;
-  }
-  .card-hover:hover {
-    transform: scale(1.08);
-  }
-  .product-link {
-    text-decoration: black;
-  }
+.bg-grey {
+  background-color: #bebaba;
+}
+.card-hover:hover {
+  transform: scale(1.08);
+}
 </style>

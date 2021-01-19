@@ -5,11 +5,10 @@
 </template>
 
 <script>
-import CoalProducts from '../components/CoalProducts.vue'
+import CoalProducts from "../components/CoalProducts.vue";
 
 export default {
   name: "Coal",
-  components: { CoalProducts },
-
-}
+  components: { CoalProducts }
+};
 </script>
