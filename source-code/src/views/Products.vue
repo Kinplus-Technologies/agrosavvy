@@ -5,11 +5,10 @@
 </template>
 
 <script>
-import ProductsPage from '../components/ProductsPage.vue'
+import ProductsPage from "../components/ProductsPage.vue";
 
 export default {
   name: "Products",
-  components: { ProductsPage },
-
-}
+  components: { ProductsPage }
+};
 </script>

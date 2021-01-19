@@ -39,8 +39,8 @@
 
 <script>
 import { apiClient } from "@/services";
-import user from '@/user'
-import { mapActions } from 'vuex';
+import user from "@/user";
+import { mapActions } from "vuex";
 
 export default {
   name: "Login",
@@ -48,14 +48,14 @@ export default {
     showPasswd: false,
     form: { username: "", passwd: "" },
     snackbar: false,
-    invalidMsg: 'Invalid login details. Try again.',
+    invalidMsg: "Invalid login details. Try again."
   }),
   methods: {
-    ...mapActions(['setLogin', 'setCurUser']),
+    ...mapActions(["setLogin", "setCurUser"]),
     onSubmit() {
       // console.log(this.form)
       apiClient
-        .post('/api/login_admin.php', this.form)
+        .post("/api/login_admin.php", this.form)
         .then(res => {
           // console.log(res.data)
           if (res.data.id) {
@@ -74,7 +74,7 @@ export default {
           this.invalidMsg = err.message;
           this.snackbar = true;
         });
-    },
-  },
+    }
+  }
 };
 </script>
