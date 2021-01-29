@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import user from "@/user";
+import user from '@/user';
 
 Vue.use(VueRouter);
 
@@ -10,43 +10,74 @@ const routes = [
     path: "/i",
     alias: "/",
     name: "home",
-    component: Home
+    component: Home,
   },
   {
-    path: "/about",
+    path: "/agrosavvy/about",
     name: "about",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import ( /* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: "/products",
+    path: "/agrosavvy/products",
     name: "products",
     component: () =>
-      import(/* webpackChunkName: "products" */ "../views/Products.vue")
+      import ( /* webpackChunkName: "products" */ "../views/Products.vue")
   },
   {
-    path: "/coal",
+    path: "/agrosavvy/products/coal-products",
     name: "coal",
-    component: () => import(/* webpackChunkName: "coal" */ "../views/Coal.vue")
+    component: () =>
+      import ( /* webpackChunkName: "coal" */ "../views/Coal.vue")
   },
   {
-    path: "/contact",
+    path: "/agrosavvy/products/peanut-products",
+    name: "peanut",
+    component: () =>
+      import ( /* webpackChunkName: "peanut" */ "../views/Peanut.vue")
+  },
+  {
+    path: "/agrosavvy/products/cashew-products",
+    name: "cashew",
+    component: () =>
+      import ( /* webpackChunkName: "cashew" */ "../components/CashewProducts.vue")
+  },
+  {
+    path: "/agrosavvy/products/shea-butter-products",
+    name: "butter",
+    component: () =>
+      import ( /* webpackChunkName: "shea-butter" */ "../components/SheaButterProducts.vue")
+  },
+  {
+    path: "/agrosavvy/products/sesame-products",
+    name: "sesame",
+    component: () =>
+      import ( /* webpackChunkName: "sesame" */ "../components/SesameProducts.vue")
+  },
+  {
+    path: "/request-quotation",
+    name: "quote",
+    component: () =>
+      import ( /* webpackChunkName: "quote" */ "../views/Quote.vue")
+  },
+  {
+    path: "/agrosavvy/contact",
     name: "contact",
     component: () =>
-      import(/* webpackChunkName: "contact" */ "../views/Contact.vue")
+      import ( /* webpackChunkName: "contact" */ "../views/Contact.vue")
   },
   {
     path: "/login",
     name: "login",
     component: () =>
-      import(/* webpackChunkName: "login" */ "../views/Login.vue")
+      import ( /* webpackChunkName: "login" */ "../views/Login.vue")
   },
   {
     path: "/404",
     alias: "*",
     name: "notFound",
     component: () =>
-      import(/* webpackChunkName: "notFound" */ "../views/NotFound.vue")
+      import ( /* webpackChunkName: "notFound" */ "../views/NotFound.vue")
   }
 ];
 
