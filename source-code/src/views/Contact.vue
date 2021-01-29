@@ -5,10 +5,11 @@
 </template>
 
 <script>
-import ContactPage from "../components/ContactPage.vue";
+import ContactPage from '../components/ContactPage.vue'
 
 export default {
   name: "Contact",
-  components: { ContactPage }
-};
+  components: { ContactPage },
+
+}
 </script>

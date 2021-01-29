@@ -10,13 +10,13 @@
       >
         <v-card>
           <v-carousel-item
-            v-for="(item, i) in items"
+            v-for="(item,i) in items"
             :key="i"
             :src="item.src"
             :alt="item.alt"
           >
             <v-sheet color="grey-dark">
-              <div class="text-center text-uppercase themecolor">
+              <div class="text-center text-uppercase orange--text text--darken-1">
                 <h2>{{ item.product }}</h2>
               </div>
             </v-sheet>
@@ -34,32 +34,32 @@ export default {
     return {
       items: [
         {
-          src: "uploads/chc2.jpg",
-          alt: "logo2",
+          src: "uploads/chc1.jpg",
+          alt: "charcoal",
           product: "charcoal"
         },
         {
           src: "uploads/ssm2.jpg",
-          alt: "logo2",
+          alt: "sesame seeds",
           product: "sesame seeds"
         },
         {
           src: "uploads/shb2.jpg",
-          alt: "logo2",
+          alt: "shea butter",
           product: "shea butter"
         },
         {
-          src: "uploads/csh1.jpg",
-          alt: "logo2",
+          src: "uploads/csh2.jpg",
+          alt: "dried cashew nuts",
           product: "dried cashew nuts"
         },
         {
           src: "uploads/pnt1.jpg",
-          alt: "logo2",
+          alt: "peanuts",
           product: "peanuts"
         }
       ]
-    };
+    }
   }
-};
+}
 </script>

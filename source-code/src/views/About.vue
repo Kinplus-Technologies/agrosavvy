@@ -5,10 +5,11 @@
 </template>
 
 <script>
-import AboutsUs from "../components/AboutsUs.vue";
+import AboutsUs from '../components/AboutsUs.vue'
 
 export default {
   name: "About",
-  components: { AboutsUs }
-};
+  components: { AboutsUs },
+
+}
 </script>
